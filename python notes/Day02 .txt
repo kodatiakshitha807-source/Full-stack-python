@@ -1,0 +1,185 @@
+TOPIC : Python program,Execution process,Python Execution Modes,Tokens and its types
+
+Python Program:
+The simplest Python program is:
+print("Hello World")
+Output:
+Hello World
+print() is a built-in function.
+It displays output on the console.
+
+Python Execution Flow:
+Python Source Code (.py)
+          │
+          ▼
+ Python Compiler
+          │
+          ▼
+ Bytecode (.pyc)
+          │
+          ▼
+Python Virtual Machine (PVM)
+          │
+          ▼
+Machine Code
+          │
+          ▼
+Output
+
+Python Execution Modes:
+Python provides two execution modes.
+1. Interactive Mode:
+Interactive mode executes one statement at a time.
+>>>
+Example
+>>> print("Hello")
+Hello
+
+>>> 10+20
+30
+
+>>> name="Raju"
+
+>>> print(name)
+Raju
+Process
+Statement
+    ↓
+Compile
+    ↓
+Execute
+    ↓
+Output
+Every statement is immediately compiled and executed.
+
+2. Script Mode
+In Script Mode, programs are written inside a file.
+Example
+example.py
+
+print("Hello")
+
+a=10
+b=20
+
+print(a+b)
+Run the file.
+python example.py
+Process
+Source File
+      ↓
+Compilation
+      ↓
+Bytecode
+      ↓
+Execution
+      ↓
+Output
+Advantages
+Large applications
+Project development
+Code reuse
+Easy maintenance
+
+Python Compilation Process
+example.py
+       │
+       ▼
+Python Compiler
+       │
+       ▼
+Bytecode (.pyc)
+       │
+       ▼
+Python Virtual Machine
+       │
+       ▼
+Machine Code
+       │
+       ▼
+Output
+
+Tokens:
+A token is the smallest meaningful unit of a Python program.
+Everything written in a Python program consists of tokens.
+Types:
+1.Keywords
+2.Identifiers
+3.Literals
+4.Operators
+5.Delimiters (Punctuators)
+
+1. Keywords:
+=>if, else, for, while, class, import
+=>Predefined reserved words that have special meaning in Python.
+2. Identifiers:
+=>x, student_name, calculate_sum
+=>Names given to variables, functions, classes, etc.
+3. Literals:
+=>10, 'Hello', 3.14, True
+=>Fixed values or data given directly in the code.
+4. Operators:
+=>+, -, *, /, =
+=>Symbols that perform operations on data.
+5. Punctuators / Delimiters:
+=>(), [], {}, ,, :
+=>Used for grouping or separating parts of code.
+
+ Variables:
+Variables are names that store data values.(General)
+ in python variable is a name that bounds to object
+Objects are stored in heap memory
+Example:
+x = 10
+ name = "Jani"
+When you assign a value to a variable, Python automatically creates it.
+
+Rules for Variables:
+* Must start with a letter or underscore _
+* Can contain letters, digits, and underscores
+* Are case-sensitive
+* Should not use keywords
+* Don’t need explicit declaration (Python assigns type automatically)
+
+Multiple Assignment:
+You can assign values to multiple variables at once.
+Example:
+a, b, c = 10, 20, 30
+ print(a, b, c)
+You can also assign the same value to multiple variables:
+x = y = z = 100
+
+Reassignment:
+You can change the value of a variable anytime.
+Example:
+x = 5
+ x = 10   # Reassigned
+ print(x) # Output: 10
+
+Deleting Variables:
+You can delete a variable using the del keyword.
+Example:
+x = 10
+ del x
+ print(x)   # Error: NameError, because x no longer exists
+
+Swapping Variables:
+You can swap the values of two variables easily.
+Example:
+a = 10
+ b = 20
+ a, b = b, a
+ print(a, b)  # Output: 20 10
+Python does this internally without using a temporary variable.
+
+
+
+
+
+
+
+
+
+
+
+

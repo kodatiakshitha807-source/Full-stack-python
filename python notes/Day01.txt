@@ -1,0 +1,90 @@
+Topics : Introduction, What is Programming, Procedural Programming Language, Object Oriented Programming Language, What is Python, Why Python History and Applications of Python
+Difference between Procedural & OOP Memory Allocation
+High level language , low level language, translator and its types
+
+Introduction:
+Python is a high-level, interpreted, general-purpose programming language created to make
+programming simple and readable.
+
+Futures:
+1.simple
+2.interpreted
+3.Cross platform
+
+Example:
+name = "Ravi"
+print(name)
+
+History:
+Python was created by: Guido van Rossum
+Development Started: 1989
+First Release: 1991
+Name Origin:
+The name "Python" was inspired by the comedy show:
+Monty Python's Flying Circus
+
+Applications:
+1.Web Development
+2.Data Science
+3.AI
+4.Automation
+5.Cyber security
+6.Gaming development 
+
+What is Programming?
+Programming is the process of writing instructions that tell a computer what to do.
+
+What is Program?
+A set of instructions written to perform a specific task is called a Program.
+
+NOTE:A computer cannot understand human language directly. It only understands machine-level
+instructions. Programming languages act as a bridge between humans and computers.
+
+Translator: 
+It's a tool which converts High-level-language to Low- level-Language
+
+High-Level Languague:
+*Human understandable language it is made up of alphabates, digits and special symbols
+*it can't understand by system
+*C,Java,Python......
+Low-level Language:
+* It is system understanable Languague it is in for of 0,1
+* Binary languague humans can't understand 
+
+What is compiler?
+It is a tool which is used to conver H.L.L to L.L.L whole code at a time 
+what is Interpreter?
+It is a tool which is uded to execute source code line by line at a time in interactive mode
+
+Procedural Programming Language:
+* Procedural Programming focuses on Functions and Procedures.
+* The program is divided into small functions, and execution happens step-by-step.
+The main focus is:
+● Functions
+● Logic
+● Sequence of Steps
+
+ADVANTAGES:
+● Easy to Learn
+● Easy to Write
+● Fast Execution
+● Suitable for Small Programs
+DISADVANTAGES:
+● Difficult for Large Projects
+● Data Security Issues
+● Less Reusability
+● Hard to Maintain
+
+Object-Oriented Programming (OOP):
+* Object-Oriented Programming organizes code using Objects and Classes.
+* Instead of focusing only on functions, OOP focuses on real-world entities.
+ADVANTAGES:
+● Reusable Code
+● Better Security
+● Easy Maintenance
+● Easy Scalability
+● Suitable for Large Applications
+DISADVANTAGES:
+● More Memory Usage
+● Slightly Slower Execution
+● More Complex for Beginners
