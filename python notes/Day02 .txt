@@ -1,4 +1,4 @@
-TOPIC : Python program,Execution process,Python Execution Modes,Tokens and its types
+TOPIC : Python program,Execution process,Python Execution Modes,Tokens and its types,variables,Assignment variable (single, multiple,delete)
 
 Python Program:
 The simplest Python program is:
@@ -125,7 +125,7 @@ Types:
 =>(), [], {}, ,, :
 =>Used for grouping or separating parts of code.
 
- Variables:
+Variables:
 Variables are names that store data values.(General)
  in python variable is a name that bounds to object
 Objects are stored in heap memory
