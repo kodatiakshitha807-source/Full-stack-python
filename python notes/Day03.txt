@@ -1,0 +1,369 @@
+Topic :Single Line & Multi Line Comments,Swapping Variables, Numeric Datatypes,Strings,Lists,Tuples,range
+
+# What is Comments?
+A comment is a line of text in a Python program that is ignored by the Python interpreter.
+Comments are used to:
+Explain the code
+Improve readability
+Add notes for developers
+Temporarily disable code during testing
+
+# Types of Comments
+Python mainly uses two types of comments.
+Single-line Comment
+Multi-line Comment
+
+1. Single-Line Comment
+A single-line comment starts with the hash (#) symbol.
+Syntax:
+         # This is a comment
+
+2. Multi-Line Comment:
+Python does not have a special multi-line comment syntax.
+However, programmers often use triple-quoted strings ('''...''' or """...""") as documentation strings (docstrings) or for multi-line text.
+Using Triple Double Quotes:
+"""
+This program
+demonstrates
+multi-line text.
+"""
+Using Triple Single Quotes
+'''
+This is another
+multi-line text block.
+'''
+# Variables
+Definition:
+A variable is a name that refers (binds) to an object (value).
+Syntax:
+        variable_name = value
+Examples:
+a = 10
+name = "Raju"
+temperature = 37.5
+
+Example Program
+age = 22
+name = "Harish"
+percentage = 95.5
+
+print(age)
+print(name)
+print(percentage)
+Output:
+22
+Harish
+95.5
+
+#Python Data Types
+A data type specifies the type of value stored in a variable.
+Python automatically determines the data type based on the assigned value.
+Example
+a = 10
+Python recognizes that 10 is an integer.
+
+Main Built-in Data Types
+Category
+Data Types
+Text Type
+str
+Numeric Types
+int, float, complex
+Sequence Types
+list, tuple, range
+Mapping Type
+dict
+Set Types
+set, frozenset
+Boolean Type
+bool
+None Type
+NoneType
+
+
+1. Text Type (str):
+A string is a sequence of characters enclosed in quotes.
+Strings are immutable, meaning they cannot be modified after creation.
+Syntax:
+name = "Raju"
+or
+name = 'Raju'
+Examples
+name = "Harish"
+
+country = "India"
+
+institute = "Codegnan"
+Output
+print(name)
+print(country)
+
+Harish
+India
+
+String Properties
+Stores text
+Immutable
+Ordered
+Supports indexing
+Example
+name = "Python"
+
+print(name[0])
+Output
+P
+
+Numeric Types
+Python supports three numeric types.
+int
+float
+complex
+
+Integer (int)
+Represents whole numbers (positive, negative, or zero).
+Examples
+age = 23
+
+marks = 500
+
+temperature = -10
+Example Program
+x = 100
+
+print(x)
+print(type(x))
+Output
+100
+<class 'int'>
+
+Float (float)
+Represents decimal numbers.
+Examples
+percentage = 97.5
+
+temperature = 40.5
+
+salary = 25000.75
+Example
+price = 199.99
+
+print(type(price))
+Output
+<class 'float'>
+
+Complex Numbers (complex)
+Complex numbers contain
+Real part
+Imaginary part
+Mathematical Form
+x + yi
+In Python
+x + yj
+Python uses j instead of i.
+Example
+z = 4 + 5j
+
+print(z)
+Output
+(4+5j)
+Real Part
+print(z.real)
+Output
+4.0
+Imaginary Part
+print(z.imag)
+Output
+5.0
+
+Sequence Types
+Sequence data types store multiple values.
+Python provides
+list
+tuple
+range
+
+List
+A list stores multiple values in a single variable.
+Lists are represented using square brackets [].
+Syntax
+list_name = [item1, item2, item3]
+Example
+cart = ["Shoes", "Shirt", "Watch"]
+Printing the List
+print(cart)
+Output
+['Shoes', 'Shirt', 'Watch']
+
+List Indexing
+List indexing starts from 0.
+Example
+cart = ["Shoes", "Shirt", "Watch"]
+
+Index
+Value
+0
+Shoes
+1
+Shirt
+2
+Watch
+
+Accessing an element
+print(cart[0])
+Output
+Shoes
+
+List Properties
+Ordered
+Mutable
+Indexed
+Allows duplicate values
+Can store different data types
+Example
+numbers = [10, 20, 30]
+
+numbers.append(40)
+
+print(numbers)
+Output
+[10, 20, 30, 40]
+
+Tuple
+A tuple is a collection of ordered items enclosed in parentheses ().
+Syntax
+tuple_name = (item1, item2, item3)
+Example
+dimensions = (10, 30, 40, 50)
+
+Tuple Properties
+Ordered
+Indexed
+Immutable
+Allows duplicate values
+Example
+colors = ("Red", "Blue", "Green")
+
+print(colors[1])
+Output
+Blue
+
+A single-item tuple is a common beginner mistake in Python.
+Incorrect Example
+student = ("Raju")
+
+print(type(student))
+Output
+<class 'str'>
+Explanation:
+Python treats ("Raju") as just a string inside parentheses.
+It is not a tuple.
+
+Correct Example (Single Item Tuple)
+student = ("Raju",)
+
+print(student)
+print(type(student))
+Output
+('Raju',)
+<class 'tuple'>
+The comma (,) tells Python that this is a tuple.
+
+More Examples
+Integer
+number = (10,)
+
+print(number)
+print(type(number))
+Output
+(10,)
+<class 'tuple'>
+
+Float
+price = (99.5,)
+
+print(price)
+print(type(price))
+Output
+(99.5,)
+<class 'tuple'>
+
+Boolean
+status = (True,)
+
+print(status)
+print(type(status))
+Output
+(True,)
+<class 'tuple'>
+
+Why is the comma required?
+Python identifies a tuple by the comma, not by the parentheses.
+x = (5)
+print(type(x))
+Output
+<class 'int'>
+
+x = (5,)
+print(type(x))
+Output
+<class 'tuple'>
+
+Interview Question
+Q: How do you create a tuple with only one element?
+Answer:
+A single-item tuple must end with a comma.
+student = ("Raju",)
+Without the comma, Python treats it as a normal value enclosed in parentheses, not as a tuple.
+
+Difference Between List and Tuple
+List                                    Tuple
+Uses []                                 Uses ()
+Mutable                                 Immutable
+Slower                                  Faster
+Can be modified                         Cannot be modified
+
+#Range:
+A range object generates a sequence of numbers.
+It is commonly used with loops.
+
+Syntax:
+One Argument
+range(stop)
+Example
+range(5)
+Sequence
+0 1 2 3 4
+
+Two Arguments
+range(start, stop)
+Example
+range(2, 8)
+Sequence
+2 3 4 5 6 7
+
+Three Arguments
+range(start, stop, step)
+Example
+range(0, 10, 2)
+Sequence
+0 2 4 6 8
+
+Printing a Range
+print(list(range(5)))
+Output
+[0, 1, 2, 3, 4]
+
+# Data Type Checking
+Use the built-in type() function to check the data type of a variable.
+Example
+name = "Raju"
+age = 23
+marks = 97.5
+
+print(type(name))
+print(type(age))
+print(type(marks))
+Output
+<class 'str'>
+<class 'int'>
+<class 'float'>
