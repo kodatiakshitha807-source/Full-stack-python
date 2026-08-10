@@ -1,0 +1,476 @@
+What are Operators?
+An operator is a symbol or keyword that performs an operation on one or more operands (values or variables).
+Example
+a = 10
+b = 20
+print(a + b)
+
+Here,
++ → Operator
+10, 20 → Operands
+Output
+30
+
+Types of Operators in Python
+Python provides the following types of operators.
+
+Operator Type                                        Purpose
+Arithmetic                                           Mathematical calculations
+Assignment                                           Assigning or updating values
+Comparison (Relational)                              Comparing values
+Logical                                              Combining conditions
+Bitwise                                              Operations on binary numbers
+Membership                                           Checking whether an item exists
+Identity                                             Checking whether two variables refer to the same object
+Conditional (Ternary)                                Writing simple if-else expressions
+
+1. Arithmetic Operators
+Arithmetic operators perform mathematical calculations.
+Operator               Meaning               Example
++                      Addition               10 + 5
+-                      Subtraction            10 - 5
+*                      Multiplication         10 * 5
+/                      Division               10 / 2
+//                     Floor Division         10 // 3
+%                      Modulus                10 % 3
+**                     Exponent (Power)       10 ** 2
+
+Addition (+)
+a = 10
+b = 2
+print(a + b)
+Output
+12
+Real-Time Example
+Shopping Bill
+shirt = 800
+pant = 1200
+total = shirt + pant
+print(total)
+Output
+2000
+
+Subtraction (-)
+print(10 - 2)
+Output
+8
+Real-Time Example
+Bank Balance
+balance = 10000
+withdraw = 2500
+print(balance - withdraw)
+Output
+7500
+
+Multiplication (*)
+print(10 * 2)
+Output
+20
+Real-Time Example
+Salary Calculation
+daily_salary = 800
+days = 30
+print(daily_salary * days)
+Output
+24000
+
+Division (/)
+Returns the quotient as a float.
+print(10 / 2)
+Output
+5.0
+Example
+print(153 / 10)
+Output
+15.3
+Real-Time Example
+Average Marks
+total = 450
+subjects = 5
+print(total / subjects)
+Output
+90.0
+
+Floor Division (//)
+Returns the quotient without the decimal part.
+print(10 // 2)
+Output
+5
+Example
+print(153 // 10)
+Output
+15
+Real-Time Example
+Number of Full Boxes
+apples = 53
+capacity = 10
+print(apples // capacity)
+Output
+5
+Five full boxes can be filled.
+Modulus (%)
+Returns the remainder.
+print(10 % 3)
+Output
+1
+Examples
+print(100 % 10)
+Output
+0
+
+print(123 % 10)
+Output
+3
+Real-Time Example
+Checking Even or Odd
+number = 18
+
+print(number % 2)
+Output
+0
+Since the remainder is 0, the number is even.
+
+Exponent (**)
+Raises a number to a power.
+print(10 ** 2)
+Output
+100
+
+print(2 ** 5)
+Output
+32
+Real-Time Example
+Area of a Square
+side = 8
+
+print(side ** 2)
+Output
+64
+
+2. Assignment Operators
+Assignment operators assign or update variable values.
+Operator                            Meaning
+=                                   Assignment
++=                                  Add and assign
+-=                                  Subtract and assign
+*=                                  Multiply and assign
+/=                                  Divide and assign
+//=                                 Floor divide and assign
+%=                                  Modulus and assign
+**=                                 Power and assign
+
+Assignment (=)
+a = 10
+
++=
+a = 100
+
+a += 500
+
+print(a)
+Output
+600
+Equivalent to
+a = a + 500
+Real-Time Example
+Wallet Balance
+wallet = 1000
+
+wallet += 500
+
+print(wallet)
+
+-=
+a = 600
+
+a -= 200
+
+print(a)
+Output
+400
+Real-Time Example
+Electricity Bill
+balance = 5000
+
+bill = 1500
+
+balance -= bill
+
+print(balance)
+Output
+3500
+
+3. Comparison Operators
+Comparison operators compare two values and return True or False.
+Operator                              Meaning
+==                                    Equal
+!=                                    Not Equal
+>                                     Greater Than
+<                                     Less Than
+>=                                    Greater Than or Equal
+<=                                    Less Than or Equal
+
+Example
+a = 100
+b = 50
+
+print(a > b)
+print(a == b)
+print(a != b)
+Output
+True
+False
+True
+Real-Time Example
+Voting Eligibility
+age = 20
+
+print(age >= 18)
+Output
+True
+
+4. Logical Operators
+Logical operators combine multiple conditions.
+Operator                               Meaning
+and                                    All conditions must be True
+or                                     At least one condition must be True
+not                                    Reverses the result
+
+and
+a = 300
+b = 200
+c = 100
+
+print(a > b and a > c)
+Output
+True
+Real-Time Example
+College Admission
+marks = 85
+age = 19
+
+print(marks >= 60 and age >= 18)
+
+or
+print(a < b or a > c)
+Output
+True
+Real-Time Example
+Login
+username = "admin"
+email = "admin@gmail.com"
+
+print(username == "admin" or email == "admin@gmail.com")
+
+not
+print(not (10 > 5))
+Output
+False
+Real-Time Example
+is_logged_in = False
+
+print(not is_logged_in)
+Output
+True
+
+5. Bitwise Operators
+Bitwise operators work on the binary representation of integers.
+Operator                                 Meaning
+&                                        AND
+^                                        XOR
+~                                        NOT
+<<                                       Left Shift
+>>                                       Right Shift
+
+Binary Representation
+10 = 1010
+
+15 = 1111
+
+Bitwise AND (&)
+Both bits must be 1.
+a = 10
+b = 15
+
+print(a & b)
+Output
+10
+Binary
+1010
+1111
+----
+1010
+
+Bitwise OR (|)
+At least one bit must be 1.
+print(10 | 15)
+Output
+15
+
+Bitwise XOR (^)
+Bits must be different.
+print(10 ^ 15)
+Output
+5
+
+Bitwise NOT (~)
+print(~10)
+Output
+-11
+Note: In Python, ~x is equivalent to -(x + 1).
+
+Left Shift (<<)
+Moves bits to the left.
+print(10 << 2)
+Output
+40
+Equivalent to
+10 × 2² = 40
+Real-Time Use Case
+Fast multiplication by powers of two.
+
+Right Shift (>>)
+Moves bits to the right.
+print(10 >> 2)
+Output
+2
+Equivalent to
+10 ÷ 2² = 2
+Real-Time Use Case
+Fast division by powers of two.
+
+6. Membership Operators
+Membership operators check whether an item exists in a sequence.
+Operator                         Meaning
+in                               Present
+not in                           Not Present
+
+Example
+ids = [101,102,103]
+
+print(101 in ids)
+print(105 in ids)
+Output
+True
+False
+
+print(105 not in ids)
+Output
+True
+Real-Time Example
+Student Attendance
+present = ["Raju","Harish","Ram"]
+
+print("Raju" in present)
+Output
+True
+
+7. Identity Operators
+Identity operators compare whether two variables refer to the same object in memory.
+Operator                          Meaning
+is                                Same object 
+is not                            Different objects
+
+Example
+a = 10
+b = 10
+
+print(a is b)
+Output
+True
+For small immutable integers, Python often reuses the same object.
+
+a = [10]
+b = [10]
+
+print(a == b)
+print(a is b)
+Output
+True
+False
+Explanation
+== compares values
+is compares object identity (memory reference)
+
+Real-Time Example
+Checking for None
+result = None
+
+print(result is None)
+Output
+True
+Best Practice: Use is None and is not None when checking for None.
+
+8. Conditional (Ternary) Operator
+The conditional (ternary) operator allows you to write an if-else statement in a single line.
+Syntax
+value_if_true if condition else value_if_false
+
+Example
+age = 20
+
+result = "Eligible" if age >= 18 else "Not Eligible"
+
+print(result)
+Output
+Eligible
+
+Real-Time Example 1: Weekend or Weekday
+day = 6
+
+result = "Weekend" if day >= 6 else "Weekday"
+
+print(result)
+Output
+Weekend
+
+Real-Time Example 2: Pass or Fail
+marks = 75
+
+status = "Pass" if marks >= 35 else "Fail"
+
+print(status)
+Output
+Pass
+
+Real-Time Example 3: Free Delivery
+cart_amount = 1200
+
+delivery = "Free Delivery" if cart_amount >= 1000 else "Delivery Charges Apply"
+
+print(delivery)
+Output
+Free Delivery
+
+Operator Precedence (Highest to Lowest)
+Priority
+Operators
+1
+()
+2
+**
+3
++x, -x, ~x
+4
+*, /, //, %
+5
++, -
+6
+<<, >>
+7
+&
+8
+^
+9
+`
+10
+==, !=, <, >, <=, >=, is, is not, in, not in
+11
+not
+12
+and
+13
+or
+14
+value_if_true if condition else value_if_false
+
