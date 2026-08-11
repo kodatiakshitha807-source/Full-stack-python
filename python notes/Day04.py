@@ -534,3 +534,10 @@ print(list(student))
 print(tuple(student))
 print(set(student))
 print(bool(student))
+
+#converting boolean into string,int,float
+value = False
+
+print(int(value))
+print(float(value))
+print(str(value))
