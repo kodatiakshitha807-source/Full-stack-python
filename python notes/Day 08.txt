@@ -1,0 +1,75 @@
+LISTS
+
+Introduction to Lists
+A list is an ordered, mutable collection used to store multiple values in a single variable.
+Lists are created using: [] or list()
+Example:
+
+numbers = [10, 20, 30]
+names = ["Ravi", "Teja", "Ankit"]
+mixed = [10, "Python", 5.5, True]
+
+LIST PROPERTIES
+
+Property Description
+Ordered Elements maintain insertion order
+Mutable Elements can be modified
+Indexed Elements can be accessed using index
+Iterable Can iterate using loops
+Allows Duplicates Duplicate values are allowed
+Dynamic Size Size can grow or shrink
+Heterogeneous Can store different datatypes
+
+Python
+
+Python
+
+Python
+LIST OPERATIONS
+
+1. Concatenation (+)
+Used to join lists.
+
+a = [1, 2]
+b = [3, 4]
+print(a + b)
+[1, 2, 3, 4]
+
+2. Repetition (*)
+Used to repeat list elements.
+Example:
+
+print([1, 2] * 3)
+[1, 2, 1, 2, 1, 2]
+
+3. Indexing
+Used to access elements using index positions.
+Example:
+
+data = [10, 20, 30, 40]
+print(data[0])
+print(data[-1])
+10
+40
+
+Python
+
+Python
+4. Slicing
+Used to extract part of a list.
+Syntax: list[start:end:step]
+
+data = [10, 20, 30, 40, 50]
+print(data[1:4])
+print(data[::-1])
+[20, 30, 40]
+[50, 40, 30, 20, 10]
+
+5. Membership Operators
+Checks whether an element exists.
+
+data = [10, 20, 30]
+print(20 in data)
+print(100 not in data)
+True
+Truegit 
