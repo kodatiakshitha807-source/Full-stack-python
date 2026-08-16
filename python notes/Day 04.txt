@@ -1,6 +1,4 @@
-#Topics: Set, dictionary,boolean, None,Type conversion(implicit,explicit).
-'''
-1. Set (set) :
+1. Set (set)
 What is a Set?
 A set is a built-in Python data type used to store unique elements.
 Does not allow duplicate values
@@ -10,7 +8,7 @@ Represented using curly braces {}
 Set elements must be immutable (e.g., int, float, string, tuple)
 
 Syntax
-       set_name = {item1, item2, item3}
+set_name = {item1, item2, item3}
 Example
 student_ids = {101, 102, 103, 104}
 
@@ -23,7 +21,7 @@ Checking the Data Type
 student_ids = {101,102,103,104}
 
 print(type(student_ids))
-Output:
+Output
 <class 'set'>
 
 Duplicate Values are Automatically Removed
@@ -68,7 +66,7 @@ Representation
 {}
 
 
-Example:
+Example
 fruits = {"Apple","Mango","Orange"}
 
 print(fruits)
@@ -82,7 +80,7 @@ print(fruits)
 Output
 {'Apple', 'Mango', 'Orange'}
 
-2. Dictionary (dict):
+2. Dictionary (dict)
 What is a Dictionary?
 A dictionary stores data in the form of key-value pairs.
 Each key is associated with a value.
@@ -92,10 +90,10 @@ Age   → 21
 City  → Hyderabad
 
 Syntax
-          dictionary_name = {
-              key1:value1,
-              key2:value2
-           }
+dictionary_name = {
+    key1:value1,
+    key2:value2
+}
 Example
 student = {
     "name":"Raju",
@@ -103,7 +101,7 @@ student = {
     "city":"Hyderabad"
 }
 
-Dictionary Properties:
+Dictionary Properties
 Ordered (Python 3.7+)
 Mutable
 Keys must be unique
@@ -166,19 +164,25 @@ age    →   21
 city   →   Hyd
 
 Set vs Dictionary
-Set                                          Dictionary
-Stores only values                           Stores key-value pairs
-Duplicate values not allowed                 Duplicate keys not allowed
-Uses {}                                      Uses {}
-Empty set → set()                            Empty dictionary → {}
+Set
+Dictionary
+Stores only values
+Stores key-value pairs
+Duplicate values not allowed
+Duplicate keys not allowed
+Uses {}
+Uses {}
+Empty set → set()
+Empty dictionary → {}
 
-3. Boolean (bool):
+
+3. Boolean (bool)
 What is Boolean?
 Boolean data type represents only two values.
 True
 False
 
-Example:
+Example
 print(True)
 print(False)
 Output
@@ -209,7 +213,7 @@ is_admin = False
 
 print(is_logged_in)
 
-4. None (NoneType):
+4. None (NoneType)
 What is None?
 None represents the absence of a value or no value.
 It is the only value of the NoneType data type.
@@ -238,7 +242,7 @@ Later,
 employee_name = "Raju"
 Now the variable contains an actual value.
 
-5. Type Casting:
+5. Type Casting
 What is Type Casting?
 Type casting is the process of converting one data type into another.
 Example
@@ -443,7 +447,7 @@ TypeError
 Because each element must contain exactly two values (a key and a value).
 
 Important Notes
-This is invalid because an integer is not iterable.
+❌ This is invalid because an integer is not iterable.
 list(10)
 Output
 TypeError: 'int' object is not iterable
@@ -451,93 +455,216 @@ Similarly,
 tuple(10)
 set(10)
 also produce a TypeError.
-'''
-# converting interger to float,string,boolean
-num = 2
 
-# int to float
-print(float(num))
+Summary Table
+Topic
+Description
+Set
+Unordered collection of unique elements
+Empty Set
+set()
+Dictionary
+Collection of key-value pairs
+Dictionary Keys
+Must be unique
+Dictionary Values
+Can be duplicated
+Boolean
+True or False
+None
+Represents the absence of a value
+Type Casting
+Converting one data type to another
+Implicit Casting
+Automatic conversion by Python
+Explicit Casting
+Manual conversion using built-in functions
 
-# int to string
-print(str(num))
 
-# int to boolean
-print(bool(num))
+Interview Questions
+1. What is the difference between a set and a dictionary?
+A set stores only unique values.
+A dictionary stores data as key-value pairs.
 
-#converting float to int,string,boolean
-price = 3.1
+2. How do you create an empty set?
+s = set()
 
-# float to int
-print(int(price))
+3. Why does {} create a dictionary instead of a set?
+Because in Python, {} is the literal syntax for an empty dictionary. To create an empty set, use set().
 
-# float to string
-print(str(price))
+4. What is the difference between student["marks"] and student.get("marks")?
+student["marks"] raises a KeyError if the key does not exist.
+student.get("marks") returns None (or a specified default value) without raising an error.
 
-# float to boolean
-print(bool(price))
+5. What is the difference between implicit and explicit type casting?
+Implicit type casting: Performed automatically by Python when appropriate.
+Explicit type casting: Performed manually by the programmer using functions such as int(), float(), str(), list(), tuple(), set(), and dict().
 
-#conerting string to boolean,list,tuple,set
-name = "power"
 
-# string to boolean
-print(bool(name))
 
-# string to list
-print(list(name))
+------------------------------------------------------------------------------------------
 
-# string to tuple
-print(tuple(name))
 
-# string to set
-print(set(name))
+Type Conversion (Type Casting)
+Type conversion in Python refers to converting the value of one data type to another using
+built-in functions such as int(), float(), str(), bool(), list(), tuple(), set(),
+and dict().
+Each section below explores conversions from a specific data type to others, with
+examples and error cases.
 
-#converting list to string,tuple,set,boolean
-numbers = [1,2,3,4]
+1. Converting from int
+Given:
 
-# list to string
-print(str(numbers))
+int_a = 2
 
-# list to tuple
-print(tuple(numbers))
+Target Type Code Output Notes
+float float(int_a) 2.0 Valid
+str str(int_a) '2' Valid
+bool bool(int_a) True Non-zero ints are True
+list list(int_a) Error int is not iterable
+set set(int_a) Error int is not iterable
+tuple tuple(int_a) Error int is not iterable
+dict dict(int_a) Error int is not iterable
 
-# list to set
-print(set(numbers))
+Python
 
-# list to boolean
-print(bool(numbers))
+Python
+2. Converting from float
+Given:
 
-#conerting tuple to string,list,set,bollean
-t = (1,2,3,4)
+float_n = 3.1
 
-print(str(t))
-print(list(t))
-print(set(t))
-print(bool(t))
+Target Type Code Output Notes
+int int(float_n) 3 Truncates decimal part
+str str(float_n) '3.1' Valid
+bool bool(float_n) True Non-zero float is True
+list list(float_n) Error float is not iterable
+set set(float_n) Error float is not iterable
+tuple tuple(float_n) Error float is not iterable
+dict dict(float_n) Error float is not iterable
 
-#converting set into string,list,tuple,boolean
-s = {3,4,5,6}
+3. Converting from str
+Given:
 
-print(str(s))
-print(list(s))
-print(tuple(s))
-print(bool(s))
+string_c = 'power'
 
-#converting dictionary into string,list,tuple,set,boolean
-student = {
-    1:"Python",
-    2:"Java",
-    3:"SQL"
-}
+Target
+Type
 
-print(str(student))
-print(list(student))
-print(tuple(student))
-print(set(student))
-print(bool(student))
+Code Output Notes
 
-#converting boolean into string,int,float
-value = False
+int int('10') 10 Only numeric strings
+int('10.9') Error Use float() instead
+int('power') Error Invalid literal
+float float('10.8') 10.8 Valid float string
 
-print(int(value))
-print(float(value))
-print(str(value))
+Python
+
+float('power') Error Invalid string
+bool bool(string_c) True Non-empty string
+list list(string_c) ['p', 'o', 'w',
+'e', 'r']
+
+Converts to list of characters
+
+tuple tuple(string_c) ('p', 'o', 'w',
+'e', 'r')
+
+Valid
+
+set set(string_c) {'w', 'o', 'e',
+'p', 'r'}
+
+Removes duplicates
+
+dict dict(string_c) Error Needs key-value pair
+
+structure
+
+4. Converting from list
+Given:
+
+list_d = [1, 2, 3, 4]
+
+Target Type Code Output Notes
+int int(list_d) Error Not allowed
+float float(list_d) Error Not allowed
+str str(list_d) "[1, 2, 3, 4]" Converts entire list to string
+bool bool(list_d) True Non-empty list
+tuple tuple(list_d) (1, 2, 3, 4) Valid
+set set(list_d) {1, 2, 3, 4} Removes duplicates if any
+dict dict(list_d) Error Needs list of key-value pairs
+
+Python
+
+Python
+5. Converting from tuple
+Given:
+
+tuple_f = (1, 2, 3, 4)
+
+Target Type Code Output Notes
+int int(tuple_f) Error Not allowed
+float float(tuple_f) Error Not allowed
+str str(tuple_f) "(1, 2, 3, 4)" Converts whole tuple to string
+bool bool(tuple_f) True Non-empty tuple
+list list(tuple_f) [1, 2, 3, 4] Valid
+set set(tuple_f) {1, 2, 3, 4} Valid
+dict dict(tuple_f) Error Must be tuple of key-value pairs
+
+6. Converting from set
+Given:
+
+set_e = {3, 4, 5, 6}
+
+Target Type Code Output Notes
+int int(set_e) Error Not allowed
+float float(set_e) Error Not allowed
+str str(set_e) "{3, 4, 5, 6}" Converts whole set
+bool bool(set_e) True Non-empty set
+list list(set_e) [3, 4, 5, 6] Order may vary
+
+Python
+
+Python
+tuple tuple(set_e) (3, 4, 5, 6) Order may vary
+dict dict(set_e) Error Must be iterable of
+key-value pairs
+
+7. Converting from dict
+Given:
+
+dict_g = {1: 1, 2: 4, 3: 9}
+
+Target Type Code Output Notes
+int int(dict_g) Error Not allowed
+float float(dict_g) Error Not allowed
+str str(dict_g) "{1: 1, 2: 4, 3: 9}" Valid
+bool bool(dict_g) True Non-empty dictionary
+list list(dict_g) [1, 2, 3] Keys only
+tuple tuple(dict_g) (1, 2, 3) Keys only
+set set(dict_g) {1, 2, 3} Keys only
+
+8. Converting from bool
+Given:
+
+boolean = False
+
+Python
+Target Type Code Output Notes
+int int(False) 0 Valid
+int(True) 1 Valid
+float float(False) 0.0 Valid
+float(True) 1.0 Valid
+str str(False) 'False' Valid
+list list(False) Error Not iterable
+tuple tuple(False) Error Not iterable
+set set(False) Error Not iterable
+dict dict(False) Error Not iterable
+
+9. Dictionary Conversion
+To convert a list to a dictionary, it must be a list of key-value tuples.
+
+d = [('name', 'teja'), ('batch', '22'), ('subject', 'python')]
+dict(d)
+# Output: {'name': 'teja', 'batch': '22', 'subject': 'python'}
