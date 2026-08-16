@@ -72,4 +72,4 @@ data = [10, 20, 30]
 print(20 in data)
 print(100 not in data)
 True
-Truegit 
+True
