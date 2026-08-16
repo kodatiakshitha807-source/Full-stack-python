@@ -1,0 +1,148 @@
+BUILT-IN LIST FUNCTIONS
+Function Description Example
+len() Returns list length len([1,2,3]) → 3
+max() Largest element max([10,20,5]) → 20
+min() Smallest element min([10,20,5]) → 5
+sum() Sum of elements sum([1,2,3]) → 6
+sorted() Returns sorted list sorted([3,1,2])
+list() Converts iterable to list list("abc")
+
+LIST METHODS
+List methods are predefined functions used to perform operations on lists.
+
+1. ADDING ELEMENT METHODS
+Method Description Example
+append() Adds single element at end lst.append(10)
+extend() Adds multiple elements lst.extend([1,2])
+insert() Inserts element at position lst.insert(1,100)
+
+2. REMOVING ELEMENT METHODS
+Method Description Example
+remove() Removes first occurrence lst.remove(10)
+pop() Removes element using index lst.pop()
+clear() Removes all elements lst.clear()
+del Deletes list or element del lst[0]
+
+3. SEARCH METHODS
+Method Description Example
+index() Returns element index lst.index(20)
+count() Counts occurrences lst.count(10)
+
+4. SORTING & REVERSING METHODS
+Method Description Example
+sort() Sorts original list lst.sort()
+reverse() Reverses list lst.reverse()
+sorted() Returns sorted new list sorted(lst)
+
+Python
+5. COPYING METHODS
+Method Description Example
+copy() Creates shallow copy lst.copy()
+
+NESTED LISTS
+A list inside another list is called a nested list.
+Example:
+
+data = [[1, 2], [3, 4]]
+print(data[0])
+print(data[1][1])
+[1, 2]
+4
+
+Python
+TUPLES
+
+Introduction to Tuples
+A tuple is an ordered, immutable collection used to store multiple values in a single variable.
+Tuples are created using parentheses ( ) or tuple()
+
+numbers = (10, 20, 30)
+names = ("Ravi", "Teja", "Ankit")
+mixed = (10, "Python", 5.5, True)
+
+TUPLE PROPERTIES
+Property Description
+Ordered Elements maintain insertion order
+Immutable Elements cannot be added, removed, or modified directly
+Iterable Can iterate through elements using loops
+Allows Duplicates Duplicate values are allowed
+Heterogeneous Can store different datatypes
+Supports Nested Objects Can contain tuples, lists, sets, dictionaries, etc.
+Mutable Objects Can
+Change
+
+If a tuple contains mutable objects (like lists), those objects can
+be modified
+
+Faster Than Lists Generally consumes less memory and provides faster access
+
+than lists
+
+Python
+
+Python
+
+Python
+
+Python
+
+Python
+CREATING TUPLES
+Empty Tuple
+
+t = ()
+
+Single Element Tuple
+
+t = (10,)
+Note:
+
+t = (10)
+is treated as an integer, not a tuple.
+
+TUPLE OPERATIONS
+
+1. Concatenation (+)
+Used to join tuples.
+
+a = (1, 2)
+b = (3, 4)
+print(a + b) # (1, 2, 3, 4)
+
+2. Repetition (*)
+Used to repeat tuple elements.
+
+print((1, 2) * 3) # (1, 2, 1, 2, 1, 2)
+
+Python
+
+Python
+
+Python
+
+Python
+3. Indexing
+Used to access elements using index positions.
+
+data = (10, 20, 30, 40)
+print(data[0]) # 10
+print(data[-1]) # 40
+
+4. Slicing
+Used to extract part of a tuple.
+Syntax:
+
+tuple[start:end:step]
+
+Example:
+
+data = (10, 20, 30, 40, 50)
+print(data[1:4]) # (20, 30, 40)
+print(data[::-1]) # (50, 40, 30, 20, 10)
+
+5. Membership Operators
+Checks whether an element exists.
+
+data = (10, 20, 30)
+print(20 in data) # True
+print(100 not in data) # True
